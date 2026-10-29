@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Pocket Ledger for Android</title>
+<meta name="theme-color" content="#0a0e13">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<style>
+  :root{
+    --bg:#0a0e13; --card:#111823; --card2:#0e141d; --border:rgba(255,255,255,.09);
+    --text:#e9eff7; --muted:#8a9aad; --accent:#34d399; --accent2:#10b981; --ink:#04211a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;min-height:100vh;padding:34px 18px 60px;color:var(--text);line-height:1.45;
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);
+    background-image:radial-gradient(900px 420px at 15% -10%,rgba(16,185,129,.18),transparent 60%),
+                     radial-gradient(700px 420px at 100% 0%,rgba(96,165,250,.10),transparent 55%);
+    background-attachment:fixed;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto}
+  header{display:flex;align-items:center;gap:13px;margin-bottom:26px}
+  .logo{width:52px;height:52px;border-radius:15px;flex:none;display:grid;place-items:center;
+    background:linear-gradient(145deg,#4ade80,#10b981 55%,#047857);box-shadow:0 8px 22px rgba(16,185,129,.32)}
+  .logo svg{width:30px;height:30px;display:block}
+  h1{font-size:22px;margin:0;letter-spacing:-.02em;font-weight:800}
+  .sub{font-size:12.5px;color:var(--muted);margin:3px 0 0}
+  .card{background:var(--card);border:1px solid rgba(52,211,153,.4);border-radius:18px;
+    padding:18px;background-image:linear-gradient(160deg,#111f1b,var(--card2))}
+  .btn{
+    display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+    padding:16px;border-radius:14px;font-size:15px;font-weight:800;text-decoration:none;
+    background:linear-gradient(140deg,#4ade80,var(--accent2));color:var(--ink);
+    box-shadow:0 10px 24px rgba(16,185,129,.3);transition:transform .06s,filter .15s;
+  }
+  .btn:hover{filter:brightness(1.06)}
+  .btn:active{transform:scale(.99)}
+  .btn svg{width:19px;height:19px}
+  .meta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;font-size:11.5px;
+    color:var(--muted);margin-top:12px;font-variant-numeric:tabular-nums}
+  ol{margin:20px 0 0;padding-left:20px;font-size:13.5px;color:var(--muted)}
+  ol li{margin-bottom:8px}
+  ol b{color:var(--text);font-weight:650}
+  .note{font-size:12.5px;color:var(--muted);background:rgba(255,255,255,.03);
+    border:1px solid var(--border);border-radius:12px;padding:13px 15px;margin-top:18px;line-height:1.6}
+  .note b{color:var(--text)}
+  .alt{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+  .alt a{flex:1;min-width:150px;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:12px 16px;border-radius:12px;font-size:13px;font-weight:700;text-decoration:none;
+    background:var(--card2);color:var(--text);border:1px solid var(--border)}
+  .alt a:hover{background:#141d27}
+  footer{text-align:center;font-size:11px;color:var(--muted);margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 512 512" fill="none" stroke="#04261c" stroke-width="40" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M196 126v260"/><path d="M196 156h86a72 72 0 0 1 0 144h-86"/>
+        <path d="M134 226h152"/><path d="M134 292h152"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Pocket Ledger</h1>
+      <div class="sub">Android app · budget tracker</div>
+    </div>
+  </header>
+
+  <div class="card">
+    <a class="btn" href="Pocket-Ledger-v1.1.apk" download="Pocket-Ledger-v1.1.apk">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/>
+      </svg>
+      Download APK
+    </a>
+    <div class="meta">
+      <span>v1.1</span><span>·</span><span>4.0 MB</span><span>·</span><span>Android 5.1+</span><span>·</span><span>Works offline</span>
+    </div>
+
+    <ol>
+      <li>Tap <b>Download APK</b> above.</li>
+      <li>Open the downloaded file on your phone.</li>
+      <li>Allow <b>"install unknown apps"</b> when Android asks — normal for apps outside the Play Store.</li>
+      <li>Open <b>Pocket Ledger</b> from your app drawer.</li>
+    </ol>
+  </div>
+
+  <div class="note">
+    <b>Already have v1.0?</b> This installs as an update over it — your ledger is kept. Don't uninstall first.
+    <br><br>
+    <b>What's new in v1.1:</b> home-screen widget with a one-tap quick-add button, a bold peso app icon,
+    hardware back-button support, and backups that open the Android share sheet instead of failing silently.
+  </div>
+
+  <div class="alt">
+    <a href="./">Open the web version</a>
+    <a href="https://github.com/">View source</a>
+  </div>
+
+  <footer>No accounts · no tracking · your data stays on your device</footer>
+</div>
+</body>
+</html>
